@@ -4,6 +4,7 @@ import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
 import Navigation from './components/Navigation/Navigation';
 import { Logo } from './components/Logo/Logo';
+import Services from './components/Services/Services';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
 
         <Routes>
           <Route exact path="/" component={Home} />
+          <Route exact path="/" component={Services} />
           <Route path="/contact" component={Contact} />
         </Routes>
       </div>
