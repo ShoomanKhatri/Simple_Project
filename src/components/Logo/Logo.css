@@ -1,0 +1,13 @@
+.logo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.img_logo{
+    object-fit: contain;
+    margin-top:-50px;
+    width:260px;
+    height:260px;
+    z-index: -1;
+}

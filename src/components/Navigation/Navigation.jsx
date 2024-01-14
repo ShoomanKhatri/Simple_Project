@@ -7,10 +7,10 @@ const Navigation = () => {
   return (
     <nav>
       <ul>
-        <li>
+        <li className='navitem'>
           <Link to="/">Home</Link>
         </li>
-        <li>
+        <li className='navitem'>
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
