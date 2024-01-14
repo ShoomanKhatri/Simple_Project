@@ -2,21 +2,14 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
+import Navigation from './components/Navigation/Navigation';
 
 const App = () => {
   return (
+
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </nav>
+        <Navigation />
 
         <hr />
 
