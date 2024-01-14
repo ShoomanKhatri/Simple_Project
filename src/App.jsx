@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Home from './components/Home';
-import Contact from './components/Contact';
+import Home from './components/Home/Home';
+import Contact from './components/Contact/Contact';
 
 const App = () => {
   return (
@@ -30,3 +30,5 @@ const App = () => {
 };
 
 export default App;
+
+// https://devashishpathak.com.np/
