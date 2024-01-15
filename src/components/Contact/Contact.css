@@ -1,0 +1,44 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color:LimeGreen ;
+}
+.heading{
+    text-align: center;
+    text-color: blueviolet;
+    font-style: ;
+    color:LimeGreen ;
+    font-size:50px ;
+    font-weight:bold;
+}
+
+p {
+    text-align: center;
+    text-color: blueviolet;
+    font-style: ;
+    color:LimeGreen ;
+    font-size:20px ;
+    font-weight:bold;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color:#04AA6D;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+}
