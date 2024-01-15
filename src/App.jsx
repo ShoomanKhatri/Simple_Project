@@ -5,6 +5,7 @@ import Contact from './components/Contact/Contact';
 import Navigation from './components/Navigation/Navigation';
 import { Logo } from './components/Logo/Logo';
 import Services from './components/Services/Services';
+import About from './components/About/About';
 
 const App = () => {
   return (
@@ -16,10 +17,12 @@ const App = () => {
 
         <hr />
 
+        {/* <Home /> */}
         <Routes>
-          <Route exact path="Home" element={<Home />} />
-          <Route exact path="Services" element={<Services />} />
-          <Route path="contact" element={<Contact />} />
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/Services" element={<Services />} />
+          <Route exact path="/About" element={<About />} />
+          <Route path="/Contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>

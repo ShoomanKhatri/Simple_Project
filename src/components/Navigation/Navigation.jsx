@@ -8,13 +8,16 @@ const Navigation = () => {
     <nav>
       <ul>
         <li className='navitem'>
-          <Link to="/Home">Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li className='navitem'>
           <Link to="/Services">Services</Link>
         </li>
         <li className='navitem'>
-          <Link to="/contact">Contact</Link>
+          <Link to="/About">About Us</Link>
+        </li>
+        <li className='navitem'>
+          <Link to="/contact">Contact Us</Link>
         </li>
       </ul>
     </nav>
