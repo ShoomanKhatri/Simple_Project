@@ -17,20 +17,22 @@ li {
 }
 
 a {
-  color:Green;
+  color: Green;
   text-decoration: none;
   padding: 10px;
-  border-radius: 5px;
+  /* border-radius: 1px; */
   transition: 0.3s ease;
   font-size: 20px;
-  font-weight:600;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-
-
+  font-weight: 600;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 a:hover {
-  background: #555;
+  /* background:-moz-element(25); */
+  /* transition: color 0.3s, border-bottom 0.3s; */
+  border-bottom: 4px solid green;
+  border-top: 4px solid green;
+
 }
 
 .navitem {

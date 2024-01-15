@@ -9,7 +9,7 @@ const Contact = () => {
             <div className="social-links">
                 <a href="https://www.facebook.com/Alam909"><i className="fa-brands fa-facebook-f fa-2xl" style={{ color: '#316FF6' }}></i></a>
                 <a href="https://www.instagram.com/your-instagram-page"><i className="fa-brands fa-instagram fa-2xl" style={{ color: '#f2075a' }}></i></a>
-                <a href="https://www.twitter.com/your-twitter-page"><i className="fa-brands fa-twitter fa-2xl" style={{ color: '#0f0f0f' }}></i></a>
+                <a href="https://www.twitter.com/your-twitter-page"><i className="fa-brands fa-twitter fa-2xl" style={{ color: 'blue' }}></i></a>
                 <a href="https://www.linkedin.com/your-linkedin-page"><i className="fa-brands fa-linkedin fa-2xl" style={{ color: '#255ab6' }}></i></a>
                 {/* Add more social media links as needed */}
             </div>

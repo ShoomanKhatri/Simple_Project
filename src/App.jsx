@@ -6,6 +6,7 @@ import Navigation from './components/Navigation/Navigation';
 import { Logo } from './components/Logo/Logo';
 import Services from './components/Services/Services';
 import About from './components/About/About';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
@@ -24,8 +25,12 @@ const App = () => {
           <Route exact path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>
+
+        <Footer/>
       </div>
     </Router>
+
+   
   );
 };
 
