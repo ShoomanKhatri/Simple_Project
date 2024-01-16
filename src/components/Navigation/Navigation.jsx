@@ -7,17 +7,17 @@ const Navigation = () => {
   return (
     <nav>
       <ul>
-        <li className='navitem'>
-          <Link to="/">Home</Link>
+        <li >
+          <Link to="/" className='navitem'>Home</Link>
         </li>
-        <li className='navitem'>
-          <Link to="/Services">Our Services</Link>
+        <li>
+          <Link to="/Services" className='navitem'>Our Services</Link>
         </li>
-        <li className='navitem'>
-          <Link to="/About">About Us</Link>
+        <li>
+          <Link to="/About" className='navitem'>About Us</Link>
         </li>
-        <li className='navitem'>
-          <Link to="/contact">Contact Us</Link>
+        <li>
+          <Link to="/contact" className='navitem'>Contact Us</Link>
         </li>
       </ul>
     </nav>

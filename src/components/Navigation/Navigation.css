@@ -16,7 +16,7 @@ li {
   display: inline;
 }
 
-a {
+.navitem {
   color: Green;
   text-decoration: none;
   padding: 10px;
@@ -27,12 +27,17 @@ a {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-a:hover {
+.navitem:hover {
   /* background:-moz-element(25); */
   /* transition: color 0.3s, border-bottom 0.3s; */
   border-bottom: 4px solid green;
   border-top: 4px solid green;
+}
 
+.navitem:active,.navitem:focus {
+  font-weight: bold;
+  background:orchid;
+  border-radius: 5px;
 }
 
 .navitem {
