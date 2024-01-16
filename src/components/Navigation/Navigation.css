@@ -30,8 +30,8 @@ li {
 .navitem:hover {
   /* background:-moz-element(25); */
   /* transition: color 0.3s, border-bottom 0.3s; */
-  border-bottom: 4px solid green;
-  border-top: 4px solid green;
+  border-bottom: 4px solid orangered;
+  border-top: 4px solid orangered;
 }
 
 .navitem:active,.navitem:focus {
