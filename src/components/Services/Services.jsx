@@ -1,4 +1,5 @@
 import React from 'react';
+import './Services.css';
 
 const Services = () => {
     const servicesList = [
@@ -9,13 +10,13 @@ const Services = () => {
     ];
 
     return (
-        <div>
+        <div className='service-container' >
             <h2>Our Services</h2>
-            <ul>
+            <ul >
                 {servicesList.map((service) => (
                     <li key={service.id}>
                         <h3>{service.title}</h3>
-                        <p>{service.description}</p>
+                        <p className='service-desc'>{service.description}</p>
                     </li>
                 ))}
             </ul>

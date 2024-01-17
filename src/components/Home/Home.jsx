@@ -8,6 +8,7 @@ import image3 from '../../assets/tyre3.jpg';
 import image4 from '../../assets/tyre4.jpg';
 
 const Home = () => {
+
   const [currentImage, setCurrentImage] = useState(1);
 
   const changeImage = (newImage) => {
@@ -26,10 +27,13 @@ const Home = () => {
     };
   }, []); // Empty dependency array ensures that the effect runs once after the initial render
 
+  
   return (
+    
     <div className="home-container">
-      <h2>Welcome to our Business Website!</h2>
-      <p>
+      <div style={{ color: "green", fontSize: "30px", fontWeight:"bold"}}>Home</div>
+      <h2 style={{ color: "orangered", fontSize: "30px", fontWeight:"bold"}}>Welcome to our Business Website!</h2>
+      <p style={{ color: "orangered", fontSize: "18px", fontWeight:"bold"}}>
         We provide quality products and services to meet your needs. Explore our website to learn more about what we offer.
       </p>
       <div className="image-and-buttons-container">
@@ -38,10 +42,10 @@ const Home = () => {
             currentImage === 1
               ? image1
               : currentImage === 2
-              ? image2
-              : currentImage === 3
-              ? image3
-              : image4
+                ? image2
+                : currentImage === 3
+                  ? image3
+                  : image4
           }
           alt={`Image ${currentImage}`}
           className="centered-image"

@@ -4,15 +4,14 @@ nav {
   /* margin-bottom: -80px; */
 }
 
-ul {
+.nav-ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
 }
-
-li {
+.nav-li{
   display: inline;
 }
 
