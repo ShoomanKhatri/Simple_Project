@@ -17,7 +17,6 @@
 
 .image-buttons {
   position: absolute;
-  color:white;
   top: 50%;
   width: 100%;
   display: flex;
@@ -27,7 +26,13 @@
 
 .change-button {
   background: none;
+  color:white;
   border: none;
   font-size: 24px;
   cursor: pointer;
+}
+
+.change-button:hover{
+  background:violet;
+  border-radius: 5px;
 }
