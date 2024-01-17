@@ -17,7 +17,7 @@ const Home = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       // Change image every 3 seconds
-      setCurrentImage((prevImage) => (prevImage % 4) + 1); // Updated to include image4
+      setCurrentImage((prevImage) => (prevImage % 4) + 1);
     }, 3000);
 
     return () => {
@@ -47,11 +47,11 @@ const Home = () => {
           className="centered-image"
         />
         <div className="image-buttons">
-          <button onClick={() => changeImage(currentImage > 1 ? currentImage - 1 : 4)}>
-            &lt; Previous
+          <button className="change-button" onClick={() => changeImage(currentImage > 1 ? currentImage - 1 : 4)}>
+            &lt;
           </button>
-          <button onClick={() => changeImage(currentImage < 4 ? currentImage + 1 : 1)}>
-            Next &gt;
+          <button className="change-button" onClick={() => changeImage(currentImage < 4 ? currentImage + 1 : 1)}>
+            &gt;
           </button>
         </div>
       </div>
