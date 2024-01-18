@@ -4,9 +4,11 @@
     padding: 20px;
 }
 
-h1 {
+.contact-heading {
     text-align: center;
     color: LimeGreen;
+    text-emphasis-color: blueviolet;
+    /* text-emphasis: filled; */
 }
 
 .heading {

@@ -4,7 +4,7 @@ import './Contact.css';
 const Contact = () => {
     return (
         <div className="container">
-            <h1>Contact Us</h1>
+            <h1 className='contact-heading'>Contact Us</h1>
             <p className="heading">Reach out to us on our social media profiles:</p>
             <div className="social-links">
                 <a href="https://www.facebook.com/Alam909"><i className="fa-brands fa-facebook-f fa-2xl" style={{ color: '#316FF6' }}></i></a>
