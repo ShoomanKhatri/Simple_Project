@@ -1,10 +1,40 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './Contact.css';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_3511fvd', 'template_lrl9gyk', form.current, 'djWA_Pd2FsM8tgWDH')
+            .then((result) => {
+                console.log(result.text);
+                alert('Email Sent !');
+                e.target.reset();
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
     return (
         <div className="container">
             <h1 className='contact-heading'>Contact Us</h1>
+
+
+            <div id="contact">
+                <span className="contactDesc">Please fill out the form below to discuss any work opportunities.</span>
+
+                <form className='contactForm' ref={form} onSubmit={sendEmail}>
+                    <input type="text" className="name" placeholder='Your Name' required name='user_name' />
+                    <input type="email" className="email" placeholder='Your Email' required name='user_email' />
+                    <textarea name="message" className='msg' rows="5" placeholder='Your Message' required ></textarea>
+                    <button type='submit' value='Send' className="submitBtn">Submit</button>
+
+                </form>
+            </div>
+
+
             <p className="heading">Reach out to us on our social media profiles:</p>
             <div className="social-links">
                 <a href="https://www.facebook.com/Alam909"><i className="fa-brands fa-facebook-f fa-2xl" style={{ color: '#316FF6' }}></i></a>
