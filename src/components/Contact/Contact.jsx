@@ -8,7 +8,7 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_3511fvd', 'template_lrl9gyk', form.current, 'djWA_Pd2FsM8tgWDH')
+        emailjs.sendForm('service_2odadpn', 'template_ax1ta19', form.current, '2qHLFYvuYZ4W2I4nF')
             .then((result) => {
                 console.log(result.text);
                 alert('Email Sent !');
@@ -23,7 +23,8 @@ const Contact = () => {
 
 
             <div id="contact">
-                <span className="contactDesc">Please fill out the form below to discuss any work opportunities.</span>
+                <div className="contactDesc">Please fill out the form below to discuss any work opportunities.</div>
+
 
                 <form className='contactForm' ref={form} onSubmit={sendEmail}>
                     <input type="text" className="name" placeholder='Your Name' required name='user_name' />

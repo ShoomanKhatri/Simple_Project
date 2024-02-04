@@ -2,11 +2,16 @@
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .contact-heading {
     text-align: center;
-    color: LimeGreen;
+    color: Green;
     text-emphasis-color: blueviolet;
     /* text-emphasis: filled; */
 }
@@ -58,6 +63,19 @@
     background: rgb(40, 40, 40);
 }
 
+.msg {
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgb(40, 40, 40);
+}
+
+
 #contactPage {
     min-height: calc(100vh-rem);
     width: 100vw;
@@ -87,7 +105,7 @@
     margin: 2rem;
     padding: 0.75rem 3.5rem;
     font-weight: bold;
-    color:white;
+    color: white;
 }
 
 .submitBtn:hover {
@@ -96,18 +114,22 @@
 }
 
 .contactDesc {
-    padding: 1rem;
-    font-size: medium;
+    /* padding: 1rem;*/
+    font-size: 20px;
     font-weight: 300;
+    /* justify-content: center; */
+    text-align: center;
     color: green;
+    width: 100%;
 }
-.contactForm{
+
+.contactForm {
     margin: 1rem;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width:90vw;
+    width: 90vw;
     max-width: 60rem;
- 
-  }
+
+}
